@@ -10,8 +10,13 @@ $(function(){
 			$('#contact').addClass('active');
 			break;
 			
+		case'All Products':
+			$('#viewproducts').addClass('active');
+			break;
+			
 		default:
-			$('#home').addClass('active');
+			$('#viewproducts').addClass('active');
+			$('#'+menu).addClass('active');
 			break;
 	}
 });

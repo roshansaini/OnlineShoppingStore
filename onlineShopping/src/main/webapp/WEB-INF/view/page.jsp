@@ -31,7 +31,7 @@
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap SOLARIS THEME CSS -->
-<link href="${css}/bootstrap-solaris-theme.css" rel="stylesheet">
+<link href="${css}/bootstrap-solaris1.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -57,8 +57,13 @@
 			<c:if test="${userClickContact==true}">
 				<%@include file="contact.jsp"%>
 			</c:if>
+
+			<c:if
+				test="${userClickAllProducts==true or userClickCategoryProducts==true}">
+				<%@include file="viewproducts.jsp"%>
+			</c:if>
 		</div>
-		
+
 		<!-- Footer -->
 		<%@include file="./shared/footer.jsp"%>
 

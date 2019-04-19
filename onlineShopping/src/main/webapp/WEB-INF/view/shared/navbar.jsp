@@ -8,7 +8,7 @@
         <ul class="navbar-nav ml-auto"> 
                
           <li class="nav-item" id="viewproducts">
-            <a class="nav-link" href="${contextRoot}/listProducts">View Products</a>
+            <a class="nav-link" href="${contextRoot}/show/all/products">View Products</a>
           </li>
 
           <li class="nav-item" id="about">
